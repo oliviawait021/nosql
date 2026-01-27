@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Asghd9h1)
 # Hands-On Lab: NoSQL Fun with MongoDB
 
 In this lab, you’ll assume the role of a data engineer who works for a growing social media platform. Until now, the platform has relied on a traditional relational database to track users and their posts on the network, but that's not going to cut it for much longer. With new features in the works and a growing user base, the company has made the strategic decision to transition to a MongoDB data store for more flexible and scalable data workflows.
