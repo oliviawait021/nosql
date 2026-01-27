@@ -1,0 +1,23 @@
+services:
+
+  mongo:
+    # Connection string: mongodb://root:password@localhost:27017/
+    container_name: mongo
+    image: mongo:latest
+    volumes: 
+      - mongo_data:/data/db    
+    restart: on-failure
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongo mongo:27017/test --quiet
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
+  
+volumes:
+  mongo_data:

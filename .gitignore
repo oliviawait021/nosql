@@ -1,0 +1,5 @@
+.DS_Store
+.hidden/
+admin/
+*_sol.py
+out/
