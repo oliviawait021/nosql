@@ -22,7 +22,7 @@ def process_likes(likes_string):
 
 # Function to read posts from CSV and insert into MongoDB
 def insert_posts_from_csv():
-    csv_file = 'data/initial_posts.csv'
+    csv_file = '/data/initial_posts.csv'
     
     print(f"Reading posts from {csv_file}...")
     
